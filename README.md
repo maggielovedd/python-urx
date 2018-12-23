@@ -23,7 +23,7 @@ pip install urx
 ```
 
 
-# Example use (Adding velocity feedback support):
+# Example use :
 
 ```python
 import urx
