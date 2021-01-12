@@ -1,5 +1,3 @@
-# The customed URX library of HAIR lab ur platform
-
 ### adding get joints velocity vector ability in the following way, must in RT monitor mode.
 
 ```python
@@ -8,7 +6,7 @@ r = urx.Robot('192.168.10.1', use_rt=True)
 qd = r.rtmon.qd_actual()
 ```
 
-# Record joint velocity
+### Record joint velocity
 
 record_joint_velocity.py
 
@@ -27,11 +25,10 @@ import urx
 rob = urx.Robot("192.168.0.2", use_rt=True)
 rob.set_payload(2, (0,0,0))
 rob.set_tcp((0,0,0,0,0,0))
-# timeout=600000
-# rob.send_program(b"def myProg():\n\tfreedrive_mode()\nsleep({})\nend".format(timeout))
 
 start = time.time()
 while time.time() - start < 60:
+    # use freedrive mode
     print(rob.rtmon.qd_actual())
 
 
