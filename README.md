@@ -3,6 +3,9 @@
 Some importnant commands in urx to control robot
 
 ## Command
+Unit for length: m  
+Unit for angle: rad
+
 ### 1.initalization
 Function | Explaination
 --- | ---
